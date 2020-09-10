@@ -28285,7 +28285,9 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"components/App.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"assets/react.png":[function(require,module,exports) {
+module.exports = "/react.a2b06f06.png";
+},{}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28295,17 +28297,25 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _react2 = _interopRequireDefault(require("../assets/react.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
   return _react.default.createElement("div", {
     className: "app__base"
-  }, _react.default.createElement("h1", null, "Welcome to rrp"), _react.default.createElement("p", null, "Edit App.js file in the components folder to get started."));
+  }, _react.default.createElement("div", {
+    className: "logo"
+  }, _react.default.createElement("img", {
+    src: _react2.default,
+    alt: "reactjs logo",
+    className: "react logo"
+  })), _react.default.createElement("h1", null, "Welcome to rrp"), _react.default.createElement("p", null, "Edit App.js file in the components folder to get started."));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../assets/react.png":"assets/react.png"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28390,7 +28400,7 @@ require("./scss/app.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render(_react.default.createElement(_App.default, null), document.getElementById("root"));
+_reactDom.default.render(_react.default.createElement(_App.default, null), document.getElementById('root'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/App":"components/App.js","./scss/app.scss":"scss/app.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -28419,7 +28429,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35437" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34837" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
