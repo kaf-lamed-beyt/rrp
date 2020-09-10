@@ -4,7 +4,11 @@
   "description": "a react, redux template that gets you up and running in no time, bootsrapped with ParcelJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html -p 3000 --out-dir build",
+    "build": "parcel src/index.html --out-dir build",
+    "delete-build": "rm -rf build .cache dist",
+    "format": "prettier --write -fix \"src/**/*.{js,jsx,scss,css,html}\""
   },
   "repository": {
     "type": "git",
