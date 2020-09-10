@@ -1,5 +1,5 @@
 {
-  "name": "rrp",
+  "name": "rerp",
   "version": "1.0.0",
   "description": "a react, redux template that gets you up and running in no time, bootsrapped with ParcelJS",
   "main": "index.js",
