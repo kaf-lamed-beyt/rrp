@@ -1,6 +1,8 @@
 import React from 'react'
 import svg from '../assets/react.png'
 
+import ClassComponent from './ClassComponent.test'
+
 const App = () => {
   return (
     <div className="app__base">
@@ -9,6 +11,7 @@ const App = () => {
       </div>
       <h1>Welcome to rrp</h1>
       <p>Edit App.js file in the components folder to get started.</p>
+      <ClassComponent />
     </div>
   )
 }
