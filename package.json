@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html -p 3000 --out-dir build",
+    "start": "parcel src/index.html -p 3000 --out-dir build --open",
     "build": "parcel src/index.html --out-dir build",
     "delete-build": "rm -rf build .cache dist",
     "format": "prettier --write -fix \"src/**/*.{js,jsx,scss,css,html}\""
@@ -33,6 +33,7 @@
     "redux": "^4.0.5"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
