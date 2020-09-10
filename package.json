@@ -1,0 +1,38 @@
+{
+  "name": "rrp",
+  "version": "1.0.0",
+  "description": "a react, redux template that gets you up and running in no time, bootsrapped with ParcelJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caleb335/rrp.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "parcel"
+  ],
+  "author": "Caleb Olojo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Caleb335/rrp/issues"
+  },
+  "homepage": "https://github.com/Caleb335/rrp#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  }
+}
