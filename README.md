@@ -1,5 +1,7 @@
 # rrp
-A parcel powered react, redux template, that gives you the feeling of create-react-app, but this time with fast bundling time.
+A parcel powered react, redux template, that gives you the feeling of create-react-app, but this time with fast bundling, compile and build time.
+
+![build-stats](src/assets/build.png)
 
 
 ## Development
