@@ -16,8 +16,6 @@ class ClassComponent extends React.Component {
         this.setState({
             clicked: clicked + 1
         })
-
-        console.log('you clicked me')
     }
 
     render() {
