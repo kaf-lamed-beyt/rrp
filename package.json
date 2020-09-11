@@ -8,11 +8,14 @@
     "start": "parcel src/index.html -p 3000 --out-dir public --open",
     "build": "parcel build src/index.html --out-dir build",
     "delete-build": "rm -rf build .cache dist",
-    "format": "prettier --write \"src/**/*.{js,jsx,scss,css,html}\""
+    "format": "prettier --write \"**/*.{js,jsx,scss,css,html}\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Caleb335/rrp.git"
+  },
+  "bin": {
+    "rrp": "index.js"
   },
   "keywords": [
     "react",
@@ -26,11 +29,13 @@
   },
   "homepage": "https://github.com/Caleb335/rrp#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

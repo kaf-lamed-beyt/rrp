@@ -1,45 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif; }
+  font-family: 'Noto Sans', sans-serif;
+}
 
 body {
-  background: #00203d; }
+  background: #00203d;
+}
 
 .app__base {
   margin-top: 10%;
   text-align: center;
   font-size: 30px;
-  color: ghostwhite; }
-  .app__base .logo {
-    width: 200px;
-    width: 200px;
-    margin: 0 auto;
-    animation: spin 4.5s ease-in infinite; }
-    .app__base .logo img {
-      height: 100%;
-      width: 100%; }
+  color: ghostwhite;
+}
+.app__base .logo {
+  width: 200px;
+  width: 200px;
+  margin: 0 auto;
+  animation: spin 4.5s ease-in infinite;
+}
+.app__base .logo img {
+  height: 100%;
+  width: 100%;
+}
 
 @keyframes spin {
   0% {
-    transform: rotate(0); }
+    transform: rotate(0);
+  }
   50% {
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+  }
   75% {
-    transform: rotate(270deg); }
+    transform: rotate(270deg);
+  }
   100% {
-    transform: rotate(359deg); } }
-  @media only screen and (max-width: 576px) {
-    .app__base {
-      padding: 30px;
-      margin-top: 15%; }
-      .app__base h1 {
-        font-size: 40px;
-        padding-top: 26px; }
-      .app__base p {
-        font-size: 18px; } }
-
+    transform: rotate(359deg);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .app__base {
+    padding: 30px;
+    margin-top: 15%;
+  }
+  .app__base h1 {
+    font-size: 40px;
+    padding-top: 26px;
+  }
+  .app__base p {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

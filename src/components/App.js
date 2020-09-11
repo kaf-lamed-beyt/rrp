@@ -1,7 +1,6 @@
 import React from 'react'
 import svg from '../assets/react.png'
 
-
 const App = () => {
   return (
     <div className="app__base">
