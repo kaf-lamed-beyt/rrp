@@ -5,6 +5,9 @@
 let shell = require('shelljs')
 let colors = require('colors')
 let fs = require('fs')
+let templates = require('./templates/template')
+const { resolve } = require('path')
+
 
 let APP_NAME = process.argv[2]
 let APP_DIRECTORY = `${process.cwd()}/${APP_NAME}`
@@ -63,4 +66,26 @@ const addPackages = () => {
       resolve()
     })
   })
+}
+
+
+const updateTemplates = () => {
+    return new Promise(resolve => {
+        let promises = []
+
+        Object.keys(templates).forEach((fileName, i) => {
+            promises[i] = new Promise(res => {
+                fs.writeFile(`${APP_DIRECTORY}/src/${fileName}`, templates[fileName]),
+                (err) => {
+                    if (err) {
+                        return console.log(err)
+                    }
+                    res()
+                }
+            })
+            Promise.all(promises).then(() => {
+                resolve()
+            })
+        })
+    }) 
 }

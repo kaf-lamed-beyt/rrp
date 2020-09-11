@@ -8,7 +8,7 @@
     "start": "parcel src/index.html -p 3000 --out-dir public --open",
     "build": "parcel build src/index.html --out-dir build",
     "delete-build": "rm -rf build .cache dist",
-    "format": "prettier --write \"**/*.{js,jsx,scss,css,html}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,scss,css,html}\""
   },
   "repository": {
     "type": "git",
