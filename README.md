@@ -6,7 +6,16 @@ A parcel powered react, redux template, that gives you the feeling of create-rea
 
 ## Development
 
-- Run `npm install` in your terminal to get all the dependencies of the project.
+- To get this package globally on your machine type this 👇 in your terminal.
+```npm
+    npm install rerp -g
+```
+OR 
+
+```npm
+    npx install rerp name-of-your-app
+```
+It automatically creates a new folder wit your app name and install all the required dependencies.
 
 - To start using this package locally on your machine run this command in your terminal
 ```npm 
@@ -62,7 +71,7 @@ In the assets folder, you can choose to add your styles along with your images t
 Inside the `src` folder, there's a sub `components` folder, that's where all your components would go.
 
 ## Things to note.
-- Don't worry you can use arrow functions to bind your handlers to the context of `this` in the constructor in your `class` components.
+- Don't worry you can use arrow functions to bind your handlers to the context of `this` in the constructor of your `class` components.
 
 ```javascript
     class ClassComponent extends React.Component {

@@ -11,17 +11,17 @@ let templates = require('./templates/template')
 let APP_NAME = process.argv[2]
 let APP_DIRECTORY = `${process.cwd()}/${APP_NAME}`
 
-const rrp = () => {
+const rerp = () => {
   return new Promise(resolve => {
     if(APP_NAME) {
-      shell.exec(`rrp ${APP_NAME}`, () => {
+      shell.exec(`rerp ${APP_NAME}`, () => {
         console.log(`your react app, ${APP_NAME} has been created`)
         resolve(true)
       })
     } else {
-      console.log('\nYou did not give me the name of your app\n'.red)
+      console.log('\nYou did not give me the name of your app\n'.yellow)
       console.log('Give me an app name in this format: ')
-      console.log('rrp your-app-name'.cyan)
+      console.log('rerp your-app-name'.cyan)
       resolve(false)
     }
   })
@@ -31,11 +31,11 @@ const rrp = () => {
 // initialize a start function
 
 const start = async () => {
-  let success = await rrp()
+  let success = await rerp()
 
   if (!success) {
     console.log(
-      'oops! something went wrong while trying to create a new react app using rrp'
+      'oops! something went wrong while trying to create a new react app using rerp'
         .red
     )
     return false
