@@ -45,6 +45,7 @@ const start = async () => {
   await changeIntoNewAppDir()
   // installs additional packages
   await addPackages()
+  await updateTemplates()
   console.log('Voila! you are set')
 }
 

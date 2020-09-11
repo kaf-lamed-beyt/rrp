@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Caleb335/rrp.git"
   },
   "bin": {
-    "rrp": "index.js"
+    "rerp": "index.js"
   },
   "keywords": [
     "react",
