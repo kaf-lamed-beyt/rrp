@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 
 // globals
 
@@ -6,11 +6,27 @@ let shell = require('shelljs')
 let colors = require('colors')
 let fs = require('fs')
 let templates = require('./templates/template')
-const { resolve } = require('path')
 
 
 let APP_NAME = process.argv[2]
 let APP_DIRECTORY = `${process.cwd()}/${APP_NAME}`
+
+const rrp = () => {
+  return new Promise(resolve => {
+    if(APP_NAME) {
+      shell.exec(`rrp ${APP_NAME}`, () => {
+        console.log(`your react app, ${APP_NAME} has been created`)
+        resolve(true)
+      })
+    } else {
+      console.log('\nYou did not give me the name of your app\n'.red)
+      console.log('Give me an app name in this format: ')
+      console.log('rrp your-app-name'.cyan)
+      resolve(false)
+    }
+  })
+}
+
 
 // initialize a start function
 
@@ -33,20 +49,6 @@ const start = async () => {
 }
 
 start()
-
-const rrp = () => {
-  return new Promise(resolve => {
-    APP_NAME
-      ? shell.exec(`rrp ${APP_NAME}`, () => {
-          console.log(`your react app, ${APP_NAME} has been created`)
-          resolve(true)
-        })
-      : console.log('\nYou did not give me the name of your app'.red)
-    console.log('\nGive me an app name in this format: ')
-    console.log('\nrrp your-app-name'.cyan)
-    resolve(false)
-  })
-}
 
 // changes into the directory provided by the user
 const changeIntoNewAppDir = () => {
