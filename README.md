@@ -30,6 +30,31 @@ it pops open your browser and loads the app at this address. :point_down:
 ```
 
 ## Folder structure
+```
+your-app
+├── build
+├── node_modules
+├── public
+│   ├── bundled-app-icon
+│   ├── index.html
+│   └── css && js (bundled format)
+│──src
+│   ├── components
+│   │   └──App.js 
+│   ├── scss
+│   │  └── app.css
+│   │  └── global.scss
+│   │  └── _variables.scss
+│   ├──index.js
+|   └── index.html
+├── .gitignore
+├── .prettierrc
+├── .babelrc
+├── package.json
+└── README.md
+``` 
+
+
 
 I decide to go with `scss` files for our styles since it gives you proper flexibility when writing your styles.
 
