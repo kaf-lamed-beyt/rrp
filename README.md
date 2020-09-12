@@ -13,7 +13,7 @@ A parcel powered react, redux template, that gives you the feeling of create-rea
 OR 
 
 ```npm
-    npx install rerp name-of-your-app
+    npm install rerp name-of-your-app
 ```
 It automatically creates a new folder wit your app name and install all the required dependencies.
 
