@@ -1,4 +1,3 @@
-module.exports = `
 import React from 'react'
 import svg from '../assets/react.png'
 
@@ -15,4 +14,3 @@ const App = () => {
 }
 
 export default App
-`
